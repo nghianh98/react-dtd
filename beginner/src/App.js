@@ -1,23 +1,26 @@
 import logo from "./logo.svg"
 import "./App.css"
+import Footer from "./components/Footer"
+import Footer2 from "./components/Footer2"
+import Footer3 from "./components/Footer3"
+import Product from "./components/Product"
 
 function App() {
+  const data = {
+    firstName: "Nguyen",
+    lastName: "Huu Nghia"
+  }
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <div className="product">
+        <Product />
+      </div>
+      <Footer name={data} age={23} />
+      <Footer2></Footer2>
+      <Footer3></Footer3>
     </div>
   )
 }
