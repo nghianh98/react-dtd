@@ -14,7 +14,7 @@ export default class Footer2 extends Component {
   }
   render() {
     return (
-      <div style={{ backgroundColor: "rgb(158, 226, 126)" }}>
+      <div>
         <div>{this.state.func}</div>
         <div>{this.state.title}</div>
         <button onClick={this.click}>Click {this.state.number} times</button>

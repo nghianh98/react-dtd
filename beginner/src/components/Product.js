@@ -19,17 +19,14 @@ export default class Product extends Component {
   }
   render() {
     return (
-      <React.Fragment>
+      <div>
         {this.state.check && (
-          <>
+          <React.Fragment>
             <div>Create by {this.state.name}</div>
-          </>
+          </React.Fragment>
         )}
-
-        {!this.state.check && <p>False</p>}
-
         {this.renderProduct()}
-      </React.Fragment>
+      </div>
     )
   }
 }
