@@ -17,6 +17,6 @@ export default class Product2 extends Component {
     clearInterval(this.interval)
   }
   render() {
-    return <div id="product">Timmer count: {this.state.count}</div>
+    return <div id="product">{this.state.count}</div>
   }
 }

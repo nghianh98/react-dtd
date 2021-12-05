@@ -1,12 +1,12 @@
 import "./App.css"
 import { useState } from "react"
 import Header from "./components/Header"
-import Footer from "./components/Footer"
-import Footer2 from "./components/Footer2"
-import Footer3 from "./components/Footer3"
 import Product from "./components/Product"
 import Product1 from "./components/Product1"
 import Product2 from "./components/Product2"
+import Footer from "./components/Footer"
+import Footer2 from "./components/Footer2"
+import Footer3 from "./components/Footer3"
 
 function App() {
   const data = {
@@ -22,7 +22,7 @@ function App() {
       <div className="product">
         <p>Current state: {String(state)}</p>
         <button onClick={() => setState(state => !state)}>Change State</button>
-        {!state && <Product />}
+        {state && <Product />}
         {state && <Product1 />}
         {state && <Product2 />}
       </div>

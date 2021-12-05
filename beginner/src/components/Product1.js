@@ -16,6 +16,6 @@ export default class Product1 extends Component {
     document.body.removeEventListener("click", this.click)
   }
   render() {
-    return <div id="product">click event</div>
+    return <div id="product">click event (Product 1) </div>
   }
 }

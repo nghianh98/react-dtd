@@ -7,8 +7,8 @@ export default class Product extends Component {
       check: true,
       name: "Nguyen Huu Nghia",
       product: [
-        { id: 1, name: "ios" },
-        { id: 2, name: "android" }
+        { id: 1, name: "1" },
+        { id: 2, name: "2" }
       ]
     }
   }
@@ -22,7 +22,7 @@ export default class Product extends Component {
       <div>
         {this.state.check && (
           <React.Fragment>
-            <div>Create by {this.state.name}</div>
+            {/* <div>Create by {this.state.name}</div> */}
           </React.Fragment>
         )}
         {this.renderProduct()}
